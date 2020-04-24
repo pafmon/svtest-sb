@@ -1,6 +1,6 @@
 const newman = require('newman')
 
-newman.run({
+return newman.run({
     collection: require('./apiTests.json'),
     reporters: 'cli',
 });
