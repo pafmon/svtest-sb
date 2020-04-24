@@ -1,6 +1,11 @@
 const newman = require('newman')
 
-return newman.run({
+newman.run({
     collection: require('./apiTests.json'),
-    reporters: 'cli',
+    reporters: 'cli'
+}, function (err) {
+    if (err) {
+        throw err;
+    }
+    console.log('collection run complete!');
 });
