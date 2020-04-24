@@ -1,2 +1,2 @@
 # svtest-sb
-https://travis-ci.com/pafmon/svtest-sb.svg?branch=master
+[![Build Status](https://travis-ci.com/pafmon/svtest-sb.svg?branch=master)](https://travis-ci.com/pafmon/svtest-sb)
