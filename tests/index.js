@@ -5,7 +5,8 @@ newman.run({
     reporters: 'cli'
 }, function (err) {
     if (err) {
-        throw err;
+        process.exit(1);
     }
     console.log('collection run complete!');
+    process.exit(0);
 });
