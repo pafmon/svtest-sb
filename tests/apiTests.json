@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "94877e7d-c786-42a9-898c-1226c954f0e8",
+		"name": "basic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "basic test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "300c4e42-451d-4442-8e60-c113b4904930",
+						"exec": [
+							"pm.test(\"API Working\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.length).to.eql(7);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:22222/api/v1/contacts",
+					"host": [
+						"localhost"
+					],
+					"port": "22222",
+					"path": [
+						"api",
+						"v1",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
