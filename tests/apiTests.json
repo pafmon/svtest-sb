@@ -13,7 +13,7 @@
 				"exec": [
 					"pm.test(\"API Working\", function () {",
 					"    var jsonData = pm.response.json();",
-					"    pm.expect(jsonData.length).to.eql(5);",
+					"    pm.expect(jsonData.length).to.eql(7);",
 					"});"
 				],
 				"type": "text/javascript"
